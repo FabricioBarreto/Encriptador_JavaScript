@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+        <!--Icons Moons-->
+    <link rel="stylesheet" href="icons/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!--Start Header-->
+        <header class="header">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo de Alura">
+                </div>
+        </header>
+        <!--End Header-->
+
+        <!--Start Main-->
+        <main class="main">
+            <section>
+                <article>
+                    <form>
+                        <textarea id="textareaFrase" rows="10" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="areaBotones">
+                            <p class="alerta"><img src="img/alert.png" alt="alert"> Solo letras minúsculas y sin acentos</p>
+                            <button class="btnEncriptar btn"><p class="textoBoton">Encriptar</p></button>
+                            <button class="btnDesencriptar btn"><p class="textoBoton">Desencriptar</p></button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <!--End Main-->
+
+        <!--Start Aside-->
+        <aside class="aside">
+            <article class="salidaMuñeco">
+                <img src="img/muñeco.png" class="muñeco" alt="Imagen de animada">
+                <div class="mensajes">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </article>
+            <article class="salidaTexto">
+                <textarea readonly id="texto" class="texto"> </textarea>
+                <button class="btn btnCopiar">
+                    <p class="textoBoton">Copiar</p>
+                </button>
+            </article>
+        </aside>
+        <!--End Aside-->
+
+        <!--Start Footer-->
+        <footer class="footer">
+            <section>
+                <p>&copy;2022 Creado por <b>Fabricio Barreto</b>.</p><br>
+                <ul class="redes">
+                    <li><a href="https://www.linkedin.com/in/fabricio-barreto-9082b0187/" target="_blank" class="icon icon-linkedin"></a></li>
+                    <li><a href="https://github.com/fabrib26" target="_blank" class="icon icon-github"></a></li>
+                    <li><a href="https://www.facebook.com/fabri.barreto/" target="_blank" class="icon icon-facebook"></a></li>
+                    <li><a href="https://www.instagram.com/fabrib_26/" target="_blank" class="icon icon-instagram"></a></li>
+                </ul>
+            </section>
+        </footer>
+        <!--End Footer-->
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+</html>

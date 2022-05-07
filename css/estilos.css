@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+@media (min-width: 0) {
+    
+.contenedor {
+    width: 100%;
+    max-width: 1420px;
+    min-width: 200px;
+    display: grid;
+    grid-template:
+        "header" 100px
+        "main" auto
+        "aside" auto
+        "footer" 80px;
+    }
+
+/* Start Header */
+.logo{
+    margin: 30px 40px;
+}
+/* End Header */
+
+/* Start Main */
+form textarea{
+    width: 100%;
+    padding: 10px 15px 0 60px;
+    font-size: 32px;
+    line-height: 48px;
+    color: #0A3871;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    font-family: "Inter",sans-serif;
+    outline: none;
+}
+
+form textarea::-webkit-scrollbar{
+    width: 0;
+}
+
+.areaBotones{
+    text-align: center;
+}
+
+.alerta{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #495057;
+    opacity: .8;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.btn{
+    height: 67px;
+    width: 328px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 3px 4px #000;
+}
+
+.textoBoton{
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.btnEncriptar .textoBoton{
+    color: #FFF;
+}
+
+.btnEncriptar{
+    background:linear-gradient( #1b5681,#083060, #020b29);
+    border-radius: 24px;
+    margin: 10px auto;
+}
+
+.btnEncriptar:active{
+    background: #082f5e;
+}
+
+.btnDesencriptar{
+    background:linear-gradient( #cbcbcb,#bdc6d3, #737680);      
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #0A3871;
+}
+
+.btnDesencriptar:active{
+    background: #c4c8cd;
+}
+/* End Main */
+
+/* Start Aside */
+aside{
+    width: 80%;
+    margin: 15px auto 30px;
+    background: #ffffff;
+    box-shadow: 10px 20px 10px -8px rgba(0, 0, 0, 0.87);
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    height: auto;
+}
+
+.salidaMuñeco{
+    width: 100%;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding: 42px;
+}
+
+.muñeco{
+    display: none;
+}
+
+.mensajes p{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    user-select: none;
+    padding: 10px;
+}
+
+.mensajes p:nth-child(2){
+    color: rgb(65, 65, 65);
+    font-size: 20px;
+}
+
+.salidaTexto{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: none;
+}
+
+.texto{
+    width: 85%;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    background: transparent;
+    color: rgb(108, 100, 100);
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 25px;
+}
+
+.texto::-webkit-scrollbar{
+    width: 0;
+}
+
+.btnCopiar{
+    background:linear-gradient( #cbcbcb,#bdc6d3, #737680);  
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    margin: 30px auto 12px;
+}
+
+.btnCopiar:active{
+    background: #c4c8cd;
+}
+
+.btnCopiar .textoBoton{
+    color: #0A3871;
+}
+/* End Aside */
+
+/* Start Footer*/
+.footer{
+    background:linear-gradient( #1b5681,#083060, #020b29);
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    padding: 15px;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+    font-weight: 400;
+}
+
+.redes{
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.redes a{
+    color: #000;
+    text-decoration: none;
+    margin-left: 25px;
+}
+/* End Footer */
+
+}
+
+@media (min-width: 680px){
+    .contenedor {
+        grid-template:
+            "header header" 100px
+            "main main" auto
+            "aside aside" auto
+            "footer footer" 85px;
+      }
+
+    .btnEncriptar{
+        margin: 0;
+    }
+
+    .redes{
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1000px){
+    .contenedor {
+        grid-template: 
+            "header header header" auto
+            "main main aside" 660px
+            "footer footer footer" auto / 
+            50% 20%;
+    }
+
+    form{
+        height: 100%;
+    }
+
+    form textarea{
+        height: 100%;
+        width: 100%;
+        padding: 0px 20px 0px 70px;
+    }
+
+    .aside{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: -30px 25px 25px 0;
+        min-width: 350px;
+    }
+
+    .salidaMuñeco{
+        height: 100%;
+    }
+    
+    .muñeco{
+        display: inline-block;
+    }
+
+    .salidaTexto{
+        height: 100%;
+        justify-content: space-between;
+        display: none;
+    }
+
+    .texto{
+        height: 545px;
+    }
+
+    .btnCopiar{
+        margin: 25px 15px;
+    }
+
+}
