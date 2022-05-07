@@ -39,7 +39,7 @@ body{
 .contenedor {
     width: 100%;
     max-width: 1420px;
-    min-width: 200px;
+    min-width: 420px;
     display: grid;
     grid-template:
         "header" 100px
