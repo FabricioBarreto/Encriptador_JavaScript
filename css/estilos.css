@@ -36,17 +36,16 @@ body{
 
 @media (min-width: 0) {
     
-.contenedor {
-    width: 100%;
-    max-width: 1420px;
-    min-width: 420px;
-    display: grid;
-    grid-template:
-        "header" 100px
-        "main" auto
-        "aside" auto
-        "footer" 80px;
-    }
+    .contenedor {
+        width: 100%;
+        max-width: 1420px;
+        display: grid;
+        grid-template:
+            "header" 100px
+            "main" auto
+            "aside" auto
+            "footer" 80px;
+        }
 
 /* Start Header */
 .logo{
@@ -208,6 +207,7 @@ aside{
     box-sizing: border-box;
     border-radius: 24px;
     margin: 30px auto 12px;
+    width: 95%;
 }
 
 .btnCopiar:active{
@@ -245,6 +245,24 @@ aside{
     margin-left: 25px;
 }
 /* End Footer */
+}
+
+@media (min-width: 440px) {
+    
+.contenedor {
+    width: 100%;
+    max-width: 1420px;
+    display: grid;
+    grid-template:
+        "header" 100px
+        "main" auto
+        "aside" auto
+        "footer" 80px;
+    }
+
+    .btnCopiar{
+       width: 328px;
+    }
 
 }
 
