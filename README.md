@@ -1,6 +1,6 @@
 # Encriptador
 
-Link page:https://fabrib26.github.io/Encriptador_JavaScript/
+Link page:https://FabricioBarreto.github.io/Encriptador_JavaScript/
 
 -------------------------------
 
